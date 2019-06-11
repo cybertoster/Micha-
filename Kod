@@ -1,0 +1,73 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace wielo_okienkowa
+{
+    public partial class Form2 : Form
+    {
+       
+
+        public Form2()
+        {
+            InitializeComponent();                     
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double height;  // to 
+            height = Convert.ToDouble(textBox1.Text);
+            double side; // i to 
+            side = Convert.ToDouble(textBox2.Text);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
+    }
+}
+
+
+    {
+        Form2 kwadrat = new Form2();
+        Form3 prostokat = new Form3();
+        Form4 trojkat = new Form4();
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            trojkat.Visible = true;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            this.Visible = false;
+            prostokat.Visible = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            this.Visible = false;
+            kwadrat.Visible = true;
+        }
+
+        public void operacje_kwadrat()
+        {
+            // chce tu!!!!!!!!
+        }
+    }
+}
